@@ -17,7 +17,11 @@ HAVING COUNT(skill) = 3
 ---EX 6
 
 ---EX 7
-
+SELECT card_name, 
+MAX(issued_amount) - MIN(issued_amount)
+FROM monthly_cards_issued
+GROUP BY card_name
+ORDER BY MAX(issued_amount) - MIN(issued_amount) DESC
 ---EX 8
 
 ---EX 9
