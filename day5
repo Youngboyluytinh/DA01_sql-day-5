@@ -1,0 +1,30 @@
+---EX 1
+Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+The STATION table is described as follows:
+---EX 2
+select COUNT(CITY) - COUNT(DISTINCT CITY) from STATION
+---EX 3
+select CEILING((AVG(Salary)) - AVG(REPLACE(Salary, 0 , ''))) from EMPLOYEES
+---EX 4
+SELECT ROUND( SUM(item_count :: decimal * order_occurrences) / SUM(order_occurrences), 1) 
+FROM items_per_order
+---EX 5
+SELECT  candidate_id
+FROM candidates
+WHERE skill IN ('Python', 'Tableau' ,'PostgreSQL')
+GROUP BY candidate_id 
+HAVING COUNT(skill) = 3
+---EX 6
+
+---EX 7
+
+---EX 8
+
+---EX 9
+
+---EX 10
+
+---EX 11
+
+---EX 12
+
